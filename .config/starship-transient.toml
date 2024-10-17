@@ -1,0 +1,9 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+add_newline = false
+format = """
+$character"""
+
+[character]
+success_symbol = "[❯](purple)[❯](cyan)"
+error_symbol = "[❯](yellow)[❯](red)"
+vicmd_symbol = "[❮](purple)[❮](cyan)"
