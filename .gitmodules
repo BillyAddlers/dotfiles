@@ -1,0 +1,3 @@
+[submodule ".config/tmux/plugins/tmux-cpu"]
+	path = .config/tmux/plugins/tmux-cpu
+	url = https://github.com/tmux-plugins/tmux-cpu
