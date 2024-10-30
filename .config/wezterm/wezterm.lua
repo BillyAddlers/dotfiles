@@ -67,7 +67,7 @@ config.enable_scroll_bar = false
 
 -- set the window decorations
 -- RESIZE, TITLE, RESIZE | TITLE, NONE
-config.window_decorations = "RESIZE | TITLE"
+config.window_decorations = "RESIZE"
 config.window_background_opacity = 0.85
 
 -- Also enabling macos background blur utility

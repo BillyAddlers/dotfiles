@@ -53,6 +53,8 @@ yabai -m rule --add app="^Calculator$"          manage=off
 yabai -m rule --add app="Karabiner-ELements$"   manage=off
 yabai -m rule --add app="^Raycast$"             manage=off
 
+# Adding Sketchybar support
+# yabai -m config external_bar all:20:0
 
 echo "yabai configuration loaded.."
 borders &
