@@ -1,27 +1,20 @@
-package.path = package.path .. ";/Users/riichi/.config/wezterm/plugins/?.lua"
 -- pull in the wezterm api
 local wezterm = require("wezterm")
 
 -- this will hold the configuration.
 local config = wezterm.config_builder()
 
+-- -- NOTE: Below is a configuration for external plugins
+-- -- Feel free to change accorrdingly
+-- local modal = require("plugins.modal-wezterm.plugin.init")
+-- modal.apply_to_config(config)
+
+-- local bar = require("plugins.bar-wezterm.plugin.init")
+-- bar.apply_to_config(config)
+
 -- NOTE: CONFIG STARTS HERE
 -- this is where you actually apply your config choices
 -- note that this configuration is opinionated and does reflect user's personality
-
---[[ -- my coolnight colorscheme
-config.colors = {
-	foreground = "#cbe0f0",
-	background = "#011423",
-	cursor_bg = "#47ff9c",
-	cursor_border = "#47ff9c",
-	cursor_fg = "#011423",
-	selection_bg = "#033259",
-	selection_fg = "#cbe0f0",
-	ansi = { "#214969", "#e52e2e", "#44ffb1", "#ffe073", "#0fc5ed", "#a277ff", "#24eaf7", "#24eaf7" },
-	brights = { "#214969", "#e52e2e", "#44ffb1", "#ffe073", "#a277ff", "#a277ff", "#24eaf7", "#24eaf7" },
-}
- ]]
 
 -- Use the defaults as a base
 config.hyperlink_rules = wezterm.default_hyperlink_rules()
@@ -76,12 +69,6 @@ config.macos_window_background_blur = 20
 
 -- NOTE: From here below is a configuration for Shortcuts, etc.
 -- Feel free to change accordingly
-
--- NOTE: Below is a configuration for external plugins
--- Feel free to change accorrdingly
--- local modal = wezterm.plugin.require("plugins.modal-wezterm.plugin.init")
-
--- modal.apply_to_config(config)
 
 -- and finally, return the configuration to wezterm
 return config
