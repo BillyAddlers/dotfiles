@@ -50,8 +50,9 @@ yabai -m config                                 \
 # Disabling specific apps
 yabai -m rule --add app="^System Settings$"     manage=off
 yabai -m rule --add app="^Calculator$"          manage=off
-yabai -m rule --add app="Karabiner-ELements$"   manage=off
+yabai -m rule --add app="Karabiner-Elements$"   manage=off
 yabai -m rule --add app="^Raycast$"             manage=off
+yabai -m rule --add app="^Java$"                manage=off
 
 # Adding Sketchybar support
 # yabai -m config external_bar all:20:0
